@@ -1,0 +1,205 @@
+/* Basic sample */
+
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f6e7e0;
+    background-image: url(../images/texture.png);
+}
+
+.flipbook-viewport {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.flipbook-viewport .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+}
+
+.flipbook-viewport .flipbook {
+    width: 900px;
+    height: 600px;
+    left: -450px;
+    top: -300px;
+}
+
+.flipbook-viewport .page {
+    width: 450px;
+    height: 600px;
+    background-color: #fcfcfc;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.flipbook .page {
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.flipbook-viewport .page img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0;
+}
+
+.flipbook-viewport .shadow {
+    -webkit-transition: -webkit-box-shadow 0.5s;
+    -moz-transition: -moz-box-shadow 0.5s;
+    -o-transition: -webkit-box-shadow 0.5s;
+    -ms-transition: -ms-box-shadow 0.5s;
+
+    -webkit-box-shadow: 0 0 20px #ccc;
+    -moz-box-shadow: 0 0 20px #ccc;
+    -o-box-shadow: 0 0 20px #ccc;
+    -ms-box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 20px #ccc;
+}
+
+/*customized css*/
+
+.flipbook {
+    font-family: "SetoFont";
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #333;
+    user-select: none;
+}
+
+.flipbook .extra-font {
+    font-family: "微軟正黑體";
+    font-weight: bold;
+}
+
+.flipbook .even {
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.1) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.1) 100%);
+    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.1) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.1) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.flipbook .odd {
+    background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.05) 100%);
+    background-image: -moz-linear-gradient(right, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.05) 100%);
+    background-image: -ms-linear-gradient(right, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.05) 100%);
+    background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.05) 100%);
+    background-image: linear-gradient(right, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.05) 100%);
+}
+
+.large-title {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.medium-title {
+    font-size: 24px;
+}
+
+.small-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.flex-horizontal-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-vertical-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-content {
+    width: 300px;
+    margin: 80px auto;
+}
+
+.table-content ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.table-content li {
+    list-style: none;
+    line-height: 25px;
+}
+
+.table-content span {
+    float: right;
+}
+
+.table-content a {
+    float: left;
+    width: 100%;
+    clear: both;
+    text-decoration: none;
+    margin: 4px 0;
+    padding: 2px 10px;
+    color: #333;
+}
+
+.table-content a:hover {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.book-content {
+    position: relative;
+    margin: 30px 25px;
+    height: 520px;
+}
+
+.book-content .dessert-img {
+    height: 100px;
+    width: auto;
+    border-radius: 5px;
+    margin-right: 20px !important;
+}
+
+.book-content .girl-img {
+    width: 120px;
+    margin-right: 15px !important;
+}
+
+.book-content .video {
+    position: absolute;
+    bottom: 0;
+}
+
+.end-content {
+    height: 600px;
+}
+
+.end-content img {
+    width: 180px;
+}
+
+.page-number {
+    color: #999;
+    width: 100%;
+    bottom: 25px;
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-size: 10px;
+}
