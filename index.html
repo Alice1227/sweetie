@@ -19,7 +19,7 @@
 
 <body>
     <div class="flipbook-viewport">
-        <div class="container">
+        <div id="canvas" class="container">
             <div class="flipbook">
                 <div class="hard" style="background-image:url(assets/images/cover.png)"></div>
                 <div class="hard"></div>
@@ -84,7 +84,9 @@
                                 <p>總是能夠陶醉在自己的粉紅泡泡當中</p>
                             </div>
                         </div>
-                        <iframe class="video" width="100%" height="230" src="https://www.youtube.com/embed/TrYvBTNgGeM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <div class="video">
+                            <iframe width="100%" height="230" src="https://www.youtube.com/embed/TrYvBTNgGeM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
                     </div>
                     <span class="page-number">5</span>
                 </div>
@@ -140,7 +142,9 @@
                                 <p>大喇喇一點也是沒有關係</p>
                             </div>
                         </div>
-                        <iframe class="video" width="100%" height="230" src="https://www.youtube.com/embed/Oboa4Eg3owM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <div class="video">
+                            <iframe width="100%" height="230" src="https://www.youtube.com/embed/Oboa4Eg3owM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
                     </div>
                     <span class="page-number">7</span>
                 </div>
@@ -198,7 +202,9 @@
                                 <p>總是會找一間自己喜歡、充滿文藝氣息的咖啡店，享用著香濃咖啡與甜點，再細細品味一本書</p>
                             </div>
                         </div>
-                        <iframe class="video" width="100%" height="230" src="https://www.youtube.com/embed/HzRSw1ZSORA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <div class="video">
+                            <iframe width="100%" height="230" src="https://www.youtube.com/embed/HzRSw1ZSORA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
                     </div>
                     <span class="page-number">9</span>
                 </div>
@@ -210,6 +216,8 @@
                             <div>
                                 <div class="medium-title">生乳酪蛋糕</div>
                                 <div>Raw Cheesecake</div>
+                                <div id="intro-btn-4" class="render-btn activate" onclick="showIntro(4)">簡介</div>
+                                <div id="video-btn-4" class="render-btn" onclick="showVideo(4)">影片</div>
                             </div>
                         </div>
                         <hr>
@@ -257,15 +265,20 @@
                             <p>12. 取出蛋糕後，周圍平均用吹風機吹數秒，將一容器放在分離式蛋糕模下輕推，即可順利脫模</p>
                         </div>
                         <br>
-                        <div class="flex-horizontal-center">
-                            <img class="girl-img" src="assets/images/04.png">
-                            <div>
-                                <div class="small-title">俐落</div>
-                                <p>反應靈敏，凡事一學就會</p>
-                                <p>做事比其他人快一拍</p>
-                                <p>對你來說，時間就是成本</p>
-                                <p>唯有速戰速決並且做到最好才是處事該有的原則</p>
+                        <div id="intro-4">
+                            <div class="flex-horizontal-center">
+                                <img class="girl-img" src="assets/images/04.png">
+                                <div>
+                                    <div class="small-title">俐落</div>
+                                    <p>反應靈敏，凡事一學就會</p>
+                                    <p>做事比其他人快一拍</p>
+                                    <p>對你來說，時間就是成本</p>
+                                    <p>唯有速戰速決並且做到最好才是處事該有的原則</p>
+                                </div>
                             </div>
+                        </div>
+                        <div id="video-4" class="video" style="display: none;">
+                            <iframe width="100%" height="230" src="https://www.youtube.com/embed/o2wGc9Wqdng?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
                     </div>
                     <span class="page-number">10</span>
@@ -322,7 +335,9 @@
                                 <p>浮誇就是你的代名詞</p>
                             </div>
                         </div>
-                        <iframe class="video" width="100%" height="230" src="https://www.youtube.com/embed/Ex-p-vqzKRw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <div class="video">
+                            <iframe width="100%" height="230" src="https://www.youtube.com/embed/Ex-p-vqzKRw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
                     </div>
                     <span class="page-number">13</span>
                 </div>
@@ -334,6 +349,8 @@
                             <div>
                                 <div class="medium-title">鏡面蛋糕</div>
                                 <div>Mirror Glaze Cake</div>
+                                <div id="intro-btn-6" class="render-btn activate" onclick="showIntro(6)">簡介</div>
+                                <div id="video-btn-6" class="render-btn" onclick="showVideo(6)">影片</div>
                             </div>
                         </div>
                         <hr>
@@ -369,16 +386,21 @@
                             <p>8. 最後倒在蛋糕上，發揮你的想像力，靜置5分鐘，在去除底部多餘淋面，保險冷藏2小時即可</p>
                         </div>
                         <br>
-                        <div class="flex-horizontal-center">
-                            <img class="girl-img" src="assets/images/06.png">
-                            <div>
-                                <div class="small-title">網美</div>
-                                <p>對於製作甜點</p>
-                                <p>拍起照來能不能夠色彩鮮豔是你的一大顧慮</p>
-                                <p>上傳之後獲得的讚多不多是你的考量</p>
-                                <p>製作過程直播時美不美也是你所擔憂的</p>
-                                <p>那嘗試鏡面蛋糕絕對是你最好的選擇</p>
+                        <div id="intro-6">
+                            <div class="flex-horizontal-center">
+                                <img class="girl-img" src="assets/images/06.png">
+                                <div>
+                                    <div class="small-title">網美</div>
+                                    <p>對於製作甜點</p>
+                                    <p>拍起照來能不能夠色彩鮮豔是你的一大顧慮</p>
+                                    <p>上傳之後獲得的讚多不多是你的考量</p>
+                                    <p>製作過程直播時美不美也是你所擔憂的</p>
+                                    <p>那嘗試鏡面蛋糕絕對是你最好的選擇</p>
+                                </div>
                             </div>
+                        </div>
+                        <div id="video-6" class="video" style="display: none;">
+                            <iframe width="100%" height="230" src="https://www.youtube.com/embed/p7MzBCFIuQc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
                     </div>
                     <span class="page-number">15</span>
@@ -434,7 +456,9 @@
                                 <p>都是你通往成就最好的養分</p>
                             </div>
                         </div>
-                        <iframe class="video" width="100%" height="230" src="https://www.youtube.com/embed/9CMbKjs5YlY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <div class="video">
+                            <iframe width="100%" height="230" src="https://www.youtube.com/embed/9CMbKjs5YlY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
                     </div>
                     <span class="page-number">17</span>
                 </div>
@@ -528,10 +552,13 @@
                                 <p>別人口中的吞吞吐吐，只是不懂你的細心縝密</p>
                             </div>
                         </div>
-                        <iframe class="video" width="100%" height="230" src="https://www.youtube.com/embed/ChSlxDlVfV4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <div class="video">
+                            <iframe width="100%" height="230" src="https://www.youtube.com/embed/ChSlxDlVfV4?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
                     </div>
                     <span class="page-number">20</span>
                 </div>
+                <!-- page21:抹茶千層D -->
                 <div>
                     <span class="page-number">21</span>
                 </div>
@@ -580,17 +607,11 @@
         function loadApp() {
             // Create the flipbook
             $('.flipbook').turn({
-                // Width
                 width: 900,
-                // Height
                 height: 600,
-                // Elevation
                 elevation: 50,
-                // Enable gradients
                 gradients: true,
-                // Auto center this flipbook
                 autoCenter: true,
-                // Total pages
                 pages: 24,
                 when: {
                     turning: function(e, page, view) {
@@ -624,17 +645,24 @@
                     }
                 }
             });
+
+            // Show canvas
+            $('#canvas').css({ visibility: '' });
         }
+
+        // Hide canvas
+        $('#canvas').css({ visibility: 'hidden' });
 
         // Load the HTML4 version if there's not CSS transform
         yepnope({
             test: Modernizr.csstransforms,
             yep: ['lib/turn.js'],
             nope: ['lib/turn.html4.min.js'],
-            both: ['assets/css/basic.css'],
+            both: ['assets/css/basic.css', 'assets/js/basic.js'],
             complete: loadApp
         });
         </script>
+    </div>
 </body>
 
 </html>
