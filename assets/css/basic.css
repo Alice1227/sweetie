@@ -77,7 +77,6 @@ body {
 .flipbook {
     font-family: SetoFont;
     font-size: 14px;
-    letter-spacing: 1px;
     color: #333;
     user-select: none;
 }
