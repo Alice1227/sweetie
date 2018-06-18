@@ -69,8 +69,13 @@ body {
 }
 
 /*customized css*/
+@font-face {
+    font-family: SetoFont;
+    src: url(../font/setofont.ttf);
+}
+
 .flipbook {
-    font-family: "SetoFont";
+    font-family: SetoFont;
     font-size: 14px;
     letter-spacing: 1px;
     color: #333;
@@ -141,6 +146,16 @@ body {
     cursor: default;
 }
 
+.page-number {
+    color: #999;
+    width: 100%;
+    bottom: 25px;
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-size: 10px;
+}
+
 .table-content {
     width: 300px;
     margin: 80px auto;
@@ -207,14 +222,4 @@ body {
 
 .end-content img {
     width: 180px;
-}
-
-.page-number {
-    color: #999;
-    width: 100%;
-    bottom: 25px;
-    position: absolute;
-    display: block;
-    text-align: center;
-    font-size: 10px;
 }
